@@ -14,6 +14,13 @@
 		CB4E141C1AFCC0F80090E132 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4E141B1AFCC0F80090E132 /* Images.xcassets */; };
 		CB4E141F1AFCC0F80090E132 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4E141D1AFCC0F80090E132 /* LaunchScreen.xib */; };
 		CB4E142B1AFCC0F80090E132 /* WatchScrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E142A1AFCC0F80090E132 /* WatchScrollerTests.m */; };
+		CB4E143F1AFCC1380090E132 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E143E1AFCC1380090E132 /* InterfaceController.m */; };
+		CB4E14421AFCC1380090E132 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E14411AFCC1380090E132 /* NotificationController.m */; };
+		CB4E14441AFCC1380090E132 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4E14431AFCC1380090E132 /* Images.xcassets */; };
+		CB4E14481AFCC1380090E132 /* WatchScroller WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CB4E14471AFCC1380090E132 /* WatchScroller WatchKit App.app */; };
+		CB4E14501AFCC1380090E132 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E144E1AFCC1380090E132 /* Interface.storyboard */; };
+		CB4E14521AFCC1380090E132 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4E14511AFCC1380090E132 /* Images.xcassets */; };
+		CB4E14551AFCC1380090E132 /* WatchScroller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB4E14381AFCC1380090E132 /* WatchScroller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +31,35 @@
 			remoteGlobalIDString = CB4E140A1AFCC0F80090E132;
 			remoteInfo = WatchScroller;
 		};
+		CB4E14491AFCC1380090E132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4E14031AFCC0F80090E132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB4E14461AFCC1380090E132;
+			remoteInfo = "WatchScroller WatchKit App";
+		};
+		CB4E14531AFCC1380090E132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB4E14031AFCC0F80090E132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB4E14371AFCC1380090E132;
+			remoteInfo = "WatchScroller WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB4E145C1AFCC1380090E132 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB4E14551AFCC1380090E132 /* WatchScroller WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB4E140B1AFCC0F80090E132 /* WatchScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchScroller.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +75,18 @@
 		CB4E14241AFCC0F80090E132 /* WatchScrollerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchScrollerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4E14291AFCC0F80090E132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB4E142A1AFCC0F80090E132 /* WatchScrollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchScrollerTests.m; sourceTree = "<group>"; };
+		CB4E14381AFCC1380090E132 /* WatchScroller WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchScroller WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4E143B1AFCC1380090E132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4E143C1AFCC1380090E132 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CB4E143D1AFCC1380090E132 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		CB4E143E1AFCC1380090E132 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		CB4E14401AFCC1380090E132 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		CB4E14411AFCC1380090E132 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		CB4E14431AFCC1380090E132 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB4E14471AFCC1380090E132 /* WatchScroller WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchScroller WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4E144D1AFCC1380090E132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4E144F1AFCC1380090E132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CB4E14511AFCC1380090E132 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB4E14351AFCC1380090E132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +119,8 @@
 			children = (
 				CB4E140D1AFCC0F80090E132 /* WatchScroller */,
 				CB4E14271AFCC0F80090E132 /* WatchScrollerTests */,
+				CB4E14391AFCC1380090E132 /* WatchScroller WatchKit Extension */,
+				CB4E144B1AFCC1380090E132 /* WatchScroller WatchKit App */,
 				CB4E140C1AFCC0F80090E132 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +130,8 @@
 			children = (
 				CB4E140B1AFCC0F80090E132 /* WatchScroller.app */,
 				CB4E14241AFCC0F80090E132 /* WatchScrollerTests.xctest */,
+				CB4E14381AFCC1380090E132 /* WatchScroller WatchKit Extension.appex */,
+				CB4E14471AFCC1380090E132 /* WatchScroller WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +177,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CB4E14391AFCC1380090E132 /* WatchScroller WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E143D1AFCC1380090E132 /* InterfaceController.h */,
+				CB4E143E1AFCC1380090E132 /* InterfaceController.m */,
+				CB4E14401AFCC1380090E132 /* NotificationController.h */,
+				CB4E14411AFCC1380090E132 /* NotificationController.m */,
+				CB4E14431AFCC1380090E132 /* Images.xcassets */,
+				CB4E143A1AFCC1380090E132 /* Supporting Files */,
+			);
+			path = "WatchScroller WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CB4E143A1AFCC1380090E132 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E143B1AFCC1380090E132 /* Info.plist */,
+				CB4E143C1AFCC1380090E132 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB4E144B1AFCC1380090E132 /* WatchScroller WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E144E1AFCC1380090E132 /* Interface.storyboard */,
+				CB4E14511AFCC1380090E132 /* Images.xcassets */,
+				CB4E144C1AFCC1380090E132 /* Supporting Files */,
+			);
+			path = "WatchScroller WatchKit App";
+			sourceTree = "<group>";
+		};
+		CB4E144C1AFCC1380090E132 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E144D1AFCC1380090E132 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +227,12 @@
 				CB4E14071AFCC0F80090E132 /* Sources */,
 				CB4E14081AFCC0F80090E132 /* Frameworks */,
 				CB4E14091AFCC0F80090E132 /* Resources */,
+				CB4E145C1AFCC1380090E132 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB4E14541AFCC1380090E132 /* PBXTargetDependency */,
 			);
 			name = WatchScroller;
 			productName = WatchScroller;
@@ -157,6 +257,39 @@
 			productReference = CB4E14241AFCC0F80090E132 /* WatchScrollerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CB4E14371AFCC1380090E132 /* WatchScroller WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4E14591AFCC1380090E132 /* Build configuration list for PBXNativeTarget "WatchScroller WatchKit Extension" */;
+			buildPhases = (
+				CB4E14341AFCC1380090E132 /* Sources */,
+				CB4E14351AFCC1380090E132 /* Frameworks */,
+				CB4E14361AFCC1380090E132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB4E144A1AFCC1380090E132 /* PBXTargetDependency */,
+			);
+			name = "WatchScroller WatchKit Extension";
+			productName = "WatchScroller WatchKit Extension";
+			productReference = CB4E14381AFCC1380090E132 /* WatchScroller WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		CB4E14461AFCC1380090E132 /* WatchScroller WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4E14561AFCC1380090E132 /* Build configuration list for PBXNativeTarget "WatchScroller WatchKit App" */;
+			buildPhases = (
+				CB4E14451AFCC1380090E132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchScroller WatchKit App";
+			productName = "WatchScroller WatchKit App";
+			productReference = CB4E14471AFCC1380090E132 /* WatchScroller WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +305,12 @@
 					CB4E14231AFCC0F80090E132 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = CB4E140A1AFCC0F80090E132;
+					};
+					CB4E14371AFCC1380090E132 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					CB4E14461AFCC1380090E132 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -190,6 +329,8 @@
 			targets = (
 				CB4E140A1AFCC0F80090E132 /* WatchScroller */,
 				CB4E14231AFCC0F80090E132 /* WatchScrollerTests */,
+				CB4E14371AFCC1380090E132 /* WatchScroller WatchKit Extension */,
+				CB4E14461AFCC1380090E132 /* WatchScroller WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +350,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E14361AFCC1380090E132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4E14481AFCC1380090E132 /* WatchScroller WatchKit App.app in Resources */,
+				CB4E14441AFCC1380090E132 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4E14451AFCC1380090E132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4E14501AFCC1380090E132 /* Interface.storyboard in Resources */,
+				CB4E14521AFCC1380090E132 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +392,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB4E14341AFCC1380090E132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4E14421AFCC1380090E132 /* NotificationController.m in Sources */,
+				CB4E143F1AFCC1380090E132 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +408,16 @@
 			isa = PBXTargetDependency;
 			target = CB4E140A1AFCC0F80090E132 /* WatchScroller */;
 			targetProxy = CB4E14251AFCC0F80090E132 /* PBXContainerItemProxy */;
+		};
+		CB4E144A1AFCC1380090E132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB4E14461AFCC1380090E132 /* WatchScroller WatchKit App */;
+			targetProxy = CB4E14491AFCC1380090E132 /* PBXContainerItemProxy */;
+		};
+		CB4E14541AFCC1380090E132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB4E14371AFCC1380090E132 /* WatchScroller WatchKit Extension */;
+			targetProxy = CB4E14531AFCC1380090E132 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +436,14 @@
 				CB4E141E1AFCC0F80090E132 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CB4E144E1AFCC1380090E132 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB4E144F1AFCC1380090E132 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,6 +583,62 @@
 			};
 			name = Release;
 		};
+		CB4E14571AFCC1380090E132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = WatchScroller_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchScroller WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		CB4E14581AFCC1380090E132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchScroller_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchScroller WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		CB4E145A1AFCC1380090E132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WatchScroller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB4E145B1AFCC1380090E132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchScroller WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +664,22 @@
 			buildConfigurations = (
 				CB4E14321AFCC0F80090E132 /* Debug */,
 				CB4E14331AFCC0F80090E132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB4E14561AFCC1380090E132 /* Build configuration list for PBXNativeTarget "WatchScroller WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4E14571AFCC1380090E132 /* Debug */,
+				CB4E14581AFCC1380090E132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB4E14591AFCC1380090E132 /* Build configuration list for PBXNativeTarget "WatchScroller WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4E145A1AFCC1380090E132 /* Debug */,
+				CB4E145B1AFCC1380090E132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
