@@ -10,13 +10,17 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button alignment="center" verticalAlignment="center" id="p2p-Db-Wzj">
-                            <group key="contentGroup" width="1" alignment="left" id="Hpo-IS-2fe">
-                                <items>
-                                    <imageView alignment="center" verticalAlignment="center" image="image" id="3Ik-3U-Xdv"/>
-                                </items>
-                            </group>
-                        </button>
+                        <group width="1" height="1" alignment="left" id="R7S-E5-747">
+                            <items>
+                                <button alignment="center" verticalAlignment="center" id="p2p-Db-Wzj">
+                                    <group key="contentGroup" width="1" alignment="left" id="Hpo-IS-2fe">
+                                        <items>
+                                            <imageView alignment="center" verticalAlignment="center" image="image" id="3Ik-3U-Xdv"/>
+                                        </items>
+                                    </group>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <segue destination="ubg-oV-Waa" kind="relationship" relationship="nextPage" id="ECc-nw-k5g"/>
