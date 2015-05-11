@@ -21,6 +21,7 @@
 		CB4E14501AFCC1380090E132 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4E144E1AFCC1380090E132 /* Interface.storyboard */; };
 		CB4E14521AFCC1380090E132 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4E14511AFCC1380090E132 /* Images.xcassets */; };
 		CB4E14551AFCC1380090E132 /* WatchScroller WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB4E14381AFCC1380090E132 /* WatchScroller WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB4E145E1B0084560090E132 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB4E145D1B0084560090E132 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		CB4E144D1AFCC1380090E132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB4E144F1AFCC1380090E132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		CB4E14511AFCC1380090E132 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB4E145D1B0084560090E132 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		CB4E14021AFCC0F80090E132 = {
 			isa = PBXGroup;
 			children = (
+				CB4E145D1B0084560090E132 /* README.md */,
 				CB4E140D1AFCC0F80090E132 /* WatchScroller */,
 				CB4E14271AFCC0F80090E132 /* WatchScrollerTests */,
 				CB4E14391AFCC1380090E132 /* WatchScroller WatchKit Extension */,
@@ -380,6 +383,7 @@
 			files = (
 				CB4E14171AFCC0F80090E132 /* ViewController.m in Sources */,
 				CB4E14141AFCC0F80090E132 /* AppDelegate.m in Sources */,
+				CB4E145E1B0084560090E132 /* README.md in Sources */,
 				CB4E14111AFCC0F80090E132 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
